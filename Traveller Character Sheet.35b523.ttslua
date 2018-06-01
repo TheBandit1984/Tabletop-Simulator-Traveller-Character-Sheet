@@ -1,4 +1,4 @@
-disableSave = true
+disableSave = false
 
 buttonFontColor = {0,0,0}
 buttonColor = {1,1,1}
