@@ -1,0 +1,1651 @@
+disableSave = true
+
+buttonFontColor = {0,0,0}
+buttonColor = {1,1,1}
+buttonScale = {0.1,0.1,0.1}
+inputFontColor = {0,0,0,1.0}
+inputColor = {1,1,1,0.92}
+
+--------------------------------------------------------------------------------
+
+defaultButtonData = {
+    counter = {
+        --Scores, STR
+        {
+            pos    = {-0.3698,0.2,-0.6367},
+            size   = 283,
+            value  = 6,
+            hideBG = true,
+            score  = true,
+            modpos = {-0.4905,0.2,-0.599},
+            modsize= 235
+        },
+        --DEX
+        {
+            pos    = {-0.3698,0.2,-0.5424},
+            size   = 283,
+            value  = 6,
+            hideBG = true,
+            score  = true,
+            modpos = {-0.4905,0.2,-0.5104},
+            modsize= 235
+        },
+        --END
+        {
+            pos    = {-0.3698,0.2,-0.4504},
+            size   = 283,
+            value  = 6,
+            hideBG = true,
+            score  = true,
+            modpos = {-0.4905,0.2,-0.4174},
+            modsize= 235
+        },
+        --INT
+        {
+            pos    = {-0.0462,0.2,-0.6367},
+            size   = 283,
+            value  = 6,
+            hideBG = true,
+            score  = true,
+            modpos = {-0.1651,0.2,-0.5976},
+            modsize= 235
+        },
+        --EDU
+        {
+            pos    = {-0.0462,0.2,-0.5424},
+            size   = 283,
+            value  = 6,
+            hideBG = true,
+            score  = true,
+            modpos = {-0.1651,0.2,-0.5071},
+            modsize= 235
+        },
+        --SOC
+        {
+            pos    = {-0.0462,0.2,-0.4504},
+            size   = 283,
+            value  = 6,
+            hideBG = true,
+            score  = true,
+            modpos = {-0.1651,0.2,-0.4155},
+            modsize= 235
+        },
+    },
+
+    textbox = {
+        --Name
+       {
+            pos       = {-0.1045,0.2,-0.8974},
+            rows      = 1,
+            width     = 4575,
+            font_size = 165,
+            label     = "Enter name here",
+            value     = "",
+            alignment = 2
+        },
+        --Age
+        {
+            pos       = {-0.3936,0.2,-0.8457},
+            rows      = 1,
+            width     = 1948,
+            font_size = 165,
+            label     = "Enter age here",
+            value     = "",
+            alignment = 2
+        },
+        --Race
+        {
+            pos       = {0.1627,0.2,-0.8457},
+            rows      = 1,
+            width     = 2004,
+            font_size = 165,
+            label     = "Enter race here",
+            value     = "",
+            alignment = 2
+        },
+        --Homeworld
+        {
+            pos       = {-0.1919,0.2,-0.7641},
+            rows      = 2,
+            width     = 1415,
+            font_size = 165,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        --Racial Traits
+        {
+            pos       = {0.3585,0.2,-0.7641},
+            rows      = 2,
+            width     = 1556,
+            font_size = 165,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        --Armour: Type
+        {
+            pos       = {0.4198,0.2,-0.6238},
+            rows      = 1,
+            width     = 1509,
+            font_size = 165,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        --Armour: Rating
+        {
+            pos       = {0.2424,0.2,-0.4981},
+            rows      = 5,
+            width     = 1061,
+            font_size = 103,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        --Armour: Special Notes
+        {
+            pos       = {0.4806,0.2,-0.4877},
+            rows      = 4,
+            width     = 1061,
+            font_size = 103,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        --Allies, Contacts, Etc
+        {
+            pos       = {-0.4202,0.2,0.8594},
+            rows      = 6,
+            width     = 2335,
+            font_size = 108,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        --Finances: Pension
+        {
+            pos       = {-0.5669,0.2,0.4207},
+            rows      = 1,
+            width     = 778,
+            font_size = 179,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        --Finances: Debt
+        {
+            pos       = {-0.5669,0.2,0.5023},
+            rows      = 1,
+            width     = 778,
+            font_size = 179,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        --Finances: Cash on Hand
+        {
+            pos       = {-0.5669,0.2,0.5858},
+            rows      = 1,
+            width     = 778,
+            font_size = 179,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        --Finances: Monthly Ship Payment
+        {
+            pos       = {-0.5669,0.2,0.6981},
+            rows      = 1,
+            width     = 778,
+            font_size = 179,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        --Career History
+        {
+            pos       = {0.249,0.2,0.6705},
+            rows      = 2,
+            width     = 3702,
+            font_size = 117,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        --Total Mass
+        {
+            pos       = {-0.1821,0.2,0.7089},
+            rows      = 1,
+            width     = 330,
+            font_size = 141,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        --Equipment
+        {
+            pos       = {-0.333,0.2,0.4},
+            rows      = 1,
+            width     = 1179,
+            font_size = 132,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        {
+            pos       = {-0.333,0.2,0.4306},
+            rows      = 1,
+            width     = 1179,
+            font_size = 132,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        {
+            pos       = {-0.333,0.2,0.4612},
+            rows      = 1,
+            width     = 1179,
+            font_size = 132,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        {
+            pos       = {-0.333,0.2,0.4918},
+            rows      = 1,
+            width     = 1179,
+            font_size = 132,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        {
+            pos       = {-0.333,0.2,0.5224},
+            rows      = 1,
+            width     = 1179,
+            font_size = 132,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        {
+            pos       = {-0.333,0.2,0.553},
+            rows      = 1,
+            width     = 1179,
+            font_size = 132,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        {
+            pos       = {-0.333,0.2,0.5836},
+            rows      = 1,
+            width     = 1179,
+            font_size = 132,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        {
+            pos       = {-0.333,0.2,0.6142},
+            rows      = 1,
+            width     = 1179,
+            font_size = 132,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        {
+            pos       = {-0.333,0.2,0.6448},
+            rows      = 1,
+            width     = 1179,
+            font_size = 132,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        {
+            pos       = {-0.333,0.2,0.6754},
+            rows      = 1,
+            width     = 1179,
+            font_size = 132,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        --Equipment Mass
+        {
+            pos       = {-0.1783,0.2,0.4},
+            rows      = 1,
+            width     = 287,
+            font_size = 132,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        {
+            pos       = {-0.1783,0.2,0.4306},
+            rows      = 1,
+            width     = 287,
+            font_size = 132,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        {
+            pos       = {-0.1783,0.2,0.4612},
+            rows      = 1,
+            width     = 287,
+            font_size = 132,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        {
+            pos       = {-0.1783,0.2,0.4918},
+            rows      = 1,
+            width     = 287,
+            font_size = 132,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        {
+            pos       = {-0.1783,0.2,0.5224},
+            rows      = 1,
+            width     = 287,
+            font_size = 132,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        {
+            pos       = {-0.1783,0.2,0.553},
+            rows      = 1,
+            width     = 287,
+            font_size = 132,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        {
+            pos       = {-0.1783,0.2,0.5836},
+            rows      = 1,
+            width     = 287,
+            font_size = 132,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        {
+            pos       = {-0.1783,0.2,0.6142},
+            rows      = 1,
+            width     = 287,
+            font_size = 132,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        {
+            pos       = {-0.1783,0.2,0.6448},
+            rows      = 1,
+            width     = 287,
+            font_size = 132,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        {
+            pos       = {-0.1783,0.2,0.6754},
+            rows      = 1,
+            width     = 287,
+            font_size = 132,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        --Misc Info (On the Back)
+        {
+            pos       = {0.0,-0.2,0.0},
+            rows      = 35,
+            width     = 6800,
+            font_size = 260,
+            label     = "",
+            value     = "",
+            alignment = 2,
+            rot = {0.0,0.0,180.0}
+        },
+        --Weapons, Weapon
+        {
+            pos       = {-0.0575,0.2,0.4792},
+            rows      = 12,
+            width     = 707,
+            font_size = 73,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        --Weapons, Attack Damage
+        {
+            pos       = {0.1132,0.2,0.4792},
+            rows      = 6,
+            width     = 872,
+            font_size = 146,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        --Weapons, Range Modifiers
+        {
+            pos       = {0.2254,0.2,0.4792},
+            rows      = 12,
+            width     = 165,
+            font_size = 73,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        {
+            pos       = {0.2617,0.2,0.4792},
+            rows      = 12,
+            width     = 165,
+            font_size = 73,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        {
+            pos       = {0.2981,0.2,0.4792},
+            rows      = 12,
+            width     = 165,
+            font_size = 73,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        {
+            pos       = {0.3344,0.2,0.4792},
+            rows      = 12,
+            width     = 165,
+            font_size = 73,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        {
+            pos       = {0.3707,0.2,0.4792},
+            rows      = 12,
+            width     = 165,
+            font_size = 73,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        {
+            pos       = {0.407,0.2,0.4792},
+            rows      = 12,
+            width     = 165,
+            font_size = 73,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        {
+            pos       = {0.4433,0.2,0.4792},
+            rows      = 12,
+            width     = 165,
+            font_size = 73,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+        --Weapons, Notes
+        {
+            pos       = {0.5495,0.2,0.4792},
+            rows      = 12,
+            width     = 802,
+            font_size = 73,
+            label     = "",
+            value     = "",
+            alignment = 2
+        },
+    }
+}
+
+
+
+--Lua beyond this point, I recommend doing something more fun with your life
+
+
+
+--Save function
+function updateSave()
+    saved_data = JSON.encode(ref_buttonData)
+    if disableSave==true then saved_data="" end
+    self.script_state = saved_data
+end
+
+--Startup procedure
+function onload(saved_data)
+    if disableSave==true then saved_data="" end
+    if saved_data ~= "" then
+        local loaded_data = JSON.decode(saved_data)
+        ref_buttonData = loaded_data
+    else
+        ref_buttonData = defaultButtonData
+    end
+
+    spawnedTextboxCount = 0
+    spawnedButtonCount = 0
+    createCounter()
+    createTextbox()
+    skillStartup()
+    skillButtonCountReset = spawnedButtonCount
+end
+
+
+
+--Click functions for buttons
+
+
+--Applies value to given counter display
+function click_counter(tableIndex, buttonIndex, amount)
+    local value = ref_buttonData.counter[tableIndex].value
+    if (amount == -1 and value > 0) or (amount ==  1 and value < 15) then
+        value = value + amount
+        ref_buttonData.counter[tableIndex].value = value
+        self.editButton({index=buttonIndex, label=string.format("%X", value)})
+        updateSave()
+    end
+
+    self.editButton({index=buttonIndex + 3,
+                     label=string.format("%+d", math.floor(value / 3) - 2 - (value == 0 and 1 or 0))})
+end
+
+
+
+--Updates saved value for given text box
+function click_textbox(i, value, selected)
+    if selected == false then
+        ref_buttonData.textbox[i].value = value
+        updateSave()
+    end
+end
+
+
+
+
+
+--Dud function for if you have a background on a counter
+function click_none() end
+
+
+--Button creation
+
+--Makes counters
+function createCounter()
+    for i, data in ipairs(ref_buttonData.counter) do
+
+        --Sets up display
+        local displayNumber = spawnedButtonCount
+
+        --Sets up label
+        local label = data.value
+
+        --Sets height/width for display
+        local size = data.size
+        if data.hideBG == true then size = 0 end
+
+        --Creates button and counts it
+        self.createButton({
+            label=label, click_function="click_none", function_owner=self,
+            position=data.pos, height=size, width=size,
+            font_size=data.size, scale=buttonScale,
+            color=buttonColor, font_color=buttonFontColor
+        })
+        spawnedButtonCount = spawnedButtonCount + 1
+
+        --Sets up add 1
+        local funcName = "counterAdd"..i
+        local func = function() click_counter(i, displayNumber, 1) end
+        self.setVar(funcName, func)
+
+        --Sets up position
+        local offsetDistance = (data.size/2 + data.size/4) * (buttonScale[1] * 0.002)
+        local pos = {data.pos[1] + offsetDistance, data.pos[2], data.pos[3]}
+
+        --Sets up size
+        local size = data.size / 2
+
+        --Creates button and counts it
+        self.createButton({
+            label="+", click_function=funcName, function_owner=self,
+            position=pos, height=size, width=size,
+            font_size=size, scale=buttonScale,
+            color=buttonColor, font_color=buttonFontColor
+        })
+        spawnedButtonCount = spawnedButtonCount + 1
+
+        --Sets up subtract 1
+        local funcName = "counterSub"..i
+        local func = function() click_counter(i, displayNumber, -1) end
+        self.setVar(funcName, func)
+
+        --Set up position
+        local pos = {data.pos[1] - offsetDistance, data.pos[2], data.pos[3]}
+
+        --Creates button and counts it
+        self.createButton({
+            label="-", click_function=funcName, function_owner=self,
+            position=pos, height=size, width=size,
+            font_size=size, scale=buttonScale,
+            color=buttonColor, font_color=buttonFontColor
+        })
+        spawnedButtonCount = spawnedButtonCount + 1
+
+        if type(data.modpos) == "table" and #data.modpos == 3 and
+           type(data.modsize) == "number" and data.modsize > 0 then
+
+            self.createButton({
+                label="+0", click_function="click_none", function_owner=self,
+                position=data.modpos, height=0, width=0,
+                font_size=data.modsize, scale=buttonScale,
+                color=buttonColor, font_color=buttonFontColor
+            })
+            spawnedButtonCount = spawnedButtonCount + 1
+        end
+    end
+end
+
+
+
+
+
+function createTextbox()
+    for i, data in ipairs(ref_buttonData.textbox) do
+        --Sets up reference function
+        local funcName = "textbox"..i
+        local func = function(_,_,val,sel) click_textbox(i,val,sel) end
+        self.setVar(funcName, func)
+
+        self.createInput({
+            input_function = funcName,
+            function_owner = self,
+            label          = data.label,
+            alignment      = data.alignment,
+            position       = data.pos,
+            scale          = buttonScale,
+            width          = data.width,
+            height         = (data.font_size*data.rows)+24,
+            font_size      = data.font_size,
+            color          = inputColor,
+            font_color     = inputFontColor,
+            value          = data.value,
+            rotation       = data.rot,
+        })
+        spawnedTextboxCount = spawnedTextboxCount + 1
+    end
+end
+
+
+
+
+
+function skillStartup()
+    local skillS = 1500
+    local skillPos  = {-0.4,0.2,-0.297}
+
+    local skillsList = {}
+    local skillButtonsDex = {}
+
+    local skillsL = {}
+    local skillsA = {}
+
+    local editButtons = {}
+
+    local lastButtonPressed = -1
+
+    local time = 1
+
+    local showSize = 800
+    local showFont = {0,0,0,1}
+    local hideSize = 0
+    local hideFont = {0,0,0,0}
+
+    self.createButton({
+        label="Add", click_function="addSkills", function_owner=self,
+        position=skillPos, height=skillS - 400, width=skillS,
+        font_size=skillS/4, scale={0.02,0.02,0.02},
+        color={0.7,0.7,1}, font_color=buttonFontColor
+    })
+    local add = spawnedButtonCount
+    spawnedButtonCount = spawnedButtonCount + 1
+
+    do
+        local upPos = -0.2465
+        local sidePos = -0.295
+        local offsetDistance = 0.025
+        local posP = {sidePos + offsetDistance, 0.2, upPos}
+        local posM = {sidePos - offsetDistance, 0.2, upPos}
+        local posX = {sidePos - 0.285, 0.2, upPos}
+
+        local scale = {0.01,0.01,0.01}
+        local fontS = 700
+        local color = {0.75,0.75,1}
+        local hideFont = {0,0,0,0}
+
+        editButtons = {}
+
+        _G["skill+"] = function(owner, player)
+            addSubEditButtons(lastButtonPressed, 1)
+        end
+
+        local p = spawnedButtonCount
+        self.createButton({
+            label="+", click_function="skill+", function_owner=self,
+            position=posP, height=0, width=0,
+            font_size=fontS, scale=scale,
+            color=color, font_color=hideFont
+        })
+        spawnedButtonCount = spawnedButtonCount + 1
+
+        _G["skill-"] = function(owner, player)
+            addSubEditButtons(lastButtonPressed, -1)
+        end
+
+        local m = spawnedButtonCount
+        self.createButton({
+            label="-", click_function="skill-", function_owner=self,
+            position=posM, height=0, width=0,
+            font_size=fontS, scale=scale,
+            color=color, font_color=hideFont
+        })
+        spawnedButtonCount = spawnedButtonCount + 1
+
+        _G["X"] = function(owner, player)
+            deleteEditButton(lastButtonPressed)
+        end
+
+        local x = spawnedButtonCount
+        self.createButton({
+            label="X", click_function="X", function_owner=self,
+            position=posX, height=0, width=0,
+            font_size=fontS, scale=scale,
+            color={1,0,0}, font_color=hideFont
+        })
+        spawnedButtonCount = spawnedButtonCount + 1
+
+        editButtons[1] = p
+        editButtons[2] = m
+        editButtons[3] = x
+
+        function addSubEditButtons(index, mod)
+            local value = skillsList[index].lvl
+            if value >= 1 and value < 99 and mod == 1 or value > 1 and value <= 99 and mod == -1 then
+                value = value + mod
+                skillsList[index].lvl = value
+            end
+            self.editButton({index = skillButtonsDex[index][2], label = value})
+            Timer.destroy("TravellerCharSheetEditButtonsTimeout"..self.getGUID())
+            startEditButtonsTimer()
+        end
+
+        function deleteEditButton(index)
+            confirm = spawnObject({type = "Custom_Tile", position = {self.getPosition()[1],self.getPosition()[2]+0.2,self.getPosition()[3]}, sound = false})
+            confirm.setCustomObject({
+                image = "http://cloud-3.steamusercontent.com/ugc/918042765106036033/1CB2D595A2610906B0C78576EF6A9C6D3064DB3A/",
+                image_bottom = "http://cloud-3.steamusercontent.com/ugc/918042765106036033/1CB2D595A2610906B0C78576EF6A9C6D3064DB3A/",
+                thickness = 0.1
+            })
+            confirm.setScale({5,1,2.5})
+            confirm.setRotation({0,180,0})
+
+            confirm.createButton({
+                click_function = "click_none",
+                function_owner = self,
+                label          = "Are you sure you want to delete\n"..skillsList[index].skill.."?",
+                position       = {0,0.1,-0.7},
+                scale          = {0.1,0.1,0.2},
+                width          = 0,
+                height         = 0,
+                font_size      = 500,
+                color          = {0,0,0,1},
+                font_color     = {1,1,1,1},
+            })
+
+            function clickYes()
+                confirm.destruct()
+                removeEditButtons()
+                table.remove(skillsList, index)
+                resetSkillButtons()
+            end
+
+            function clickNo()
+                confirm.destruct()
+            end
+
+            confirm.createButton({
+                click_function = "clickYes",
+                function_owner = self,
+                label          = "Yes",
+                position       = {0.5,0.1,0.3},
+                scale          = {0.1,0.1,0.2},
+                width          = 2000,
+                height         = 2000,
+                font_size      = 1000,
+                color          = {0,1,0,1},
+                font_color     = {0,0,0,1},
+                tooltip        = "Yes"
+            })
+            confirm.createButton({
+                click_function = "clickNo",
+                function_owner = self,
+                label          = "No",
+                position       = {-0.5,0.1,0.3},
+                scale          = {0.1,0.1,0.2},
+                width          = 2000,
+                height         = 2000,
+                font_size      = 1000,
+                color          = {1,0,0,1},
+                font_color     = {0,0,0,1},
+                tooltip        = "No"
+            })
+        end
+    end
+
+    self.createInput({
+        input_function = "click_textboxTwo",
+        function_owner = self,
+        label          = "",
+        alignment      = 1,
+        position       = {-0.012,0.2,0.012},
+        height         = 2463,
+        width          = 6350,
+        rotation       = {0,0,0},
+        scale          = {0.1,0.1,0.1},
+        font_size      = 100,
+        color          = {1,1,1,1},
+        font_color     = {0,0,0,1},
+        tab            = 3,
+    })
+    local text = {}
+    text.index = spawnedTextboxCount
+    spawnedTextboxCount = spawnedTextboxCount + 1
+
+    function click_textboxTwo(obj, player, value, selected)
+        if selected == false then
+            text.value = value
+            updateSave()
+        end
+    end
+
+
+
+    local memory1 = ""
+    local memory2 = ""
+
+    function addSkills(owner, player)
+        if #skillButtonsDex >= 80 then
+            broadcastToColor("You've got the max amount of skills you can have.", player, {1,0,0})
+            return nil
+        end
+
+        --Make the background
+        skiller = spawnObject({type = "Custom_Tile", position = {self.getPosition()[1],self.getPosition()[2]+0.2,self.getPosition()[3]}, sound = false})
+        skiller.setCustomObject({
+            image = "http://cloud-3.steamusercontent.com/ugc/918042765106036033/1CB2D595A2610906B0C78576EF6A9C6D3064DB3A/",
+            image_bottom = "http://cloud-3.steamusercontent.com/ugc/918042765106036033/1CB2D595A2610906B0C78576EF6A9C6D3064DB3A/",
+            thickness = 0.1
+        })
+        skiller.setScale({8,1,9.2})
+        skiller.setRotation({0,180,0})
+
+        skillButtons = {}
+        skills = {
+            {--1
+                { label = "Combat",                     subSkills = 2, row = -1 },
+                { label = "Vehicle",                    subSkills = 3 },
+                { label = "Social",                     subSkills = 4 },
+                { label = "Tools/\nEquipment",          subSkills = 5 },
+                { label = "Talents/\nSkills",           subSkills = 6 },
+            },
+            {--2
+                { label = "Battle\nDress",              subSkills = -1, row = 0 },
+                { label = "Explosives",                 subSkills = -1 },
+                { label = "Gun\nCombat",                subSkills = 7 },
+                { label = "Gunner",                     subSkills = 8 },
+                { label = "Heavy\nWeapons",             subSkills = 10 },
+                { label = "Medic",                      subSkills = -1 },
+                { label = "Melee",                      subSkills = 11 },
+                { label = "Recon",                      subSkills = -1 },
+                { label = "Tactics",                    subSkills = 12 },
+            },
+            {--3
+                { label = "Astrogation",                subSkills = -1, row = 0 },
+                { label = "Comms",                      subSkills = -1 },
+                { label = "Computers",                  subSkills = -1 },
+                { label = "Drive",                      subSkills = 13 },
+                { label = "Engineer",                   subSkills = 14 },
+                { label = "Flyer",                      subSkills = 15 },
+                { label = "Gunner",                     subSkills = 9 },
+                { label = "Mechanic",                   subSkills = -1 },
+                { label = "Navigation",                 subSkills = -1 },
+                { label = "Pilot",                      subSkills = 16 },
+                { label = "Seafarer",                   subSkills = 17 },
+                { label = "Sensors",                    subSkills = -1 },
+            },
+            {--4
+                { label = "Advocate",                   subSkills = -1, row = 0 },
+                { label = "Art",                        subSkills = 18 },
+                { label = "Broker",                     subSkills = -1 },
+                { label = "Carouse",                    subSkills = -1 },
+                { label = "Deception",                  subSkills = -1 },
+                { label = "Diplomat",                   subSkills = -1 },
+                { label = "Gambler",                    subSkills = -1 },
+                { label = "Language",                   subSkills = 20 },
+                { label = "Leadership",                 subSkills = -1 },
+                { label = "Persuade",                   subSkills = -1 },
+                { label = "Stewerd",                    subSkills = -1 },
+                { label = "Trade",                      subSkills = 21 },
+            },
+            {--5
+                { label = "Comms",                      subSkills = -1, row = 0 },
+                { label = "Computers",                  subSkills = -1 },
+                { label = "Explosives",                 subSkills = -1 },
+                { label = "Mechanic",                   subSkills = -1 },
+                { label = "Navigation",                 subSkills = -1 },
+                { label = "Remote\nOperations",         subSkills = -1 },
+                { label = "Sensors",                    subSkills = -1 },
+                { label = "Vacc Suit",                  subSkills = -1 },
+                { label = "Zero-G",                     subSkills = -1 },
+            },
+            {--6
+                { label = "Admin",                      subSkills = -1, row = 0 },
+                { label = "Animals",                    subSkills = 22 },
+                { label = "Athletics",                  subSkills = 23 },
+                { label = "Art",                        subSkills = 19 },
+                { label = "Investigate",                subSkills = -1 },
+                { label = "Jack of\nAll Trades",        subSkills = -1 },
+                { label = "Science",                    subSkills = 24 },
+                { label = "Stealth",                    subSkills = -1 },
+                { label = "Streetwise",                 subSkills = -1 },
+                { label = "Survival",                   subSkills = -1 },
+            },
+            {--7
+                { label = "Gun\nCombat",                subSkills = -1, row = 2 },
+                { label = "Energy Pistol",              subSkills = -1 },
+                { label = "Energy Rifle",               subSkills = -1 },
+                { label = "Shotgun",                    subSkills = -1 },
+                { label = "Slug Pistol",                subSkills = -1 },
+                { label = "Slug Rifle",                 subSkills = -1 },
+            },
+            {--8
+                { label = "Gunner",                     subSkills = -1, row = 2 },
+                { label = "Capital\nWeapons",           subSkills = -1 },
+                { label = "Ortillery",                  subSkills = -1 },
+                { label = "Screens",                    subSkills = -1 },
+                { label = "Turrets",                    subSkills = -1 },
+            },
+            {--9
+                { label = "Gunner",                     subSkills = -1, row = 3 },
+                { label = "Capital\nWeapons",           subSkills = -1 },
+                { label = "Ortillery",                  subSkills = -1 },
+                { label = "Screens",                    subSkills = -1 },
+                { label = "Turrets",                    subSkills = -1 },
+            },
+            {--10
+                { label = "Heavy\nWeapons",             subSkills = -1, row = 2 },
+                { label = "Field Artillery",            subSkills = -1 },
+                { label = "Launchers",                  subSkills = -1 },
+                { label = "Man Portable\nArtillery",    subSkills = -1 },
+            },
+            {--11
+                { label = "Melee",                      subSkills = -1, row = 2 },
+                { label = "Blade",                      subSkills = -1 },
+                { label = "Bludgeon",                   subSkills = -1 },
+                { label = "Natural\nWeapons",           subSkills = -1 },
+                { label = "Unarmed\nCombat",            subSkills = -1 },
+            },
+            {--12
+                { label = "Tactics",                    subSkills = -1, row = 2 },
+                { label = "Military\nTactics",          subSkills = -1 },
+                { label = "Naval\nTactics",             subSkills = -1 },
+            },
+            {--13
+                { label = "Drive",                      subSkills = -1, row = 3 },
+                { label = "Mole",                       subSkills = -1 },
+                { label = "Tracked",                    subSkills = -1 },
+                { label = "Wheeled",                    subSkills = -1 },
+            },
+            {--14
+                { label = "Engineer",                   subSkills = -1, row = 3 },
+                { label = "Electronics",                subSkills = -1 },
+                { label = "Jump Drive",                 subSkills = -1 },
+                { label = "Life Support",               subSkills = -1 },
+                { label = "Maneuver\nDrive",            subSkills = -1 },
+                { label = "Power",                      subSkills = -1 },
+            },
+            {--15
+                { label = "Flyer",                      subSkills = -1, row = 3 },
+                { label = "Grav",                       subSkills = -1 },
+                { label = "Roter",                      subSkills = -1 },
+                { label = "Wing",                       subSkills = -1 },
+            },
+            {--16
+                { label = "Pilot",                      subSkills = -1, row = 3 },
+                { label = "Capital Ship",               subSkills = -1 },
+                { label = "Small Craft",                subSkills = -1 },
+                { label = "Spacecraft",                 subSkills = -1 },
+            },
+            {--17
+                { label = "Seafarer",                   subSkills = -1, row = 3 },
+                { label = "Moterboat",                  subSkills = -1 },
+                { label = "Ocean Ships",                subSkills = -1 },
+                { label = "Sail",                       subSkills = -1 },
+                { label = "Submarine",                  subSkills = -1 },
+            },
+            {--18
+                { label = "Art",                        subSkills = -1, row = 3 },
+                { label = "Acting",                     subSkills = -1 },
+                { label = "Dance",                      subSkills = -1 },
+                { label = "Holography",                 subSkills = -1 },
+                { label = "Instrument",                 subSkills = -1 },
+                { label = "Sculpting",                  subSkills = -1 },
+                { label = "Writing",                    subSkills = -1 },
+            },
+            {--19
+                { label = "Art",                        subSkills = -1, row = 2 },
+                { label = "Acting",                     subSkills = -1 },
+                { label = "Dance",                      subSkills = -1 },
+                { label = "Holography",                 subSkills = -1 },
+                { label = "Instrument",                 subSkills = -1 },
+                { label = "Sculpting",                  subSkills = -1 },
+                { label = "Writing",                    subSkills = -1 },
+            },
+            {--20
+                { label = "Language",                   subSkills = -1, row = 3 },
+                { label = "Angelic",                    subSkills = -1 },
+                { label = "Oynprith",                   subSkills = -1 },
+                { label = "Vilani",                     subSkills = -1 },
+                { label = "Zdetl",                      subSkills = -1 },
+            },
+            {--21
+                { label = "Trade",                      subSkills = -1, row = 3 },
+                { label = "Biologicals",                subSkills = -1 },
+                { label = "Civil\nEngineering",         subSkills = -1 },
+                { label = "Hydroponics",                subSkills = -1 },
+                { label = "Polymers",                   subSkills = -1 },
+                { label = "Space\nConstruction",        subSkills = -1 },
+            },
+            {--22
+                { label = "Animals",                    subSkills = -1, row = 2 },
+                { label = "Farming",                    subSkills = -1 },
+                { label = "Riding",                     subSkills = -1 },
+                { label = "Training",                   subSkills = -1 },
+                { label = "Veterinary",                 subSkills = -1 },
+            },
+            {--23
+                { label = "Athletics",                  subSkills = -1, row = 2 },
+                { label = "Coordination",               subSkills = -1 },
+                { label = "Endurance",                  subSkills = -1 },
+                { label = "Flying",                     subSkills = -1 },
+                { label = "Strength",                   subSkills = -1 },
+            },
+            {--24
+                { label = "Science",                    subSkills = -1, row = 2 },
+                { label = "Life\nScience",              subSkills = 25 },
+                { label = "Physical\nScience",          subSkills = 26 },
+                { label = "Social\nScience",            subSkills = 27 },
+                { label = "Space\nScience",             subSkills = 28 },
+            },
+            {--25
+                { label = "Life\nScience",              subSkills = -1, row = 3 },
+                { label = "Biology",                    subSkills = -1 },
+                { label = "Cybernetics",                subSkills = -1 },
+                { label = "Genetics",                   subSkills = -1 },
+                { label = "Psionicology",               subSkills = -1 },
+            },
+            {--26
+                { label = "Physical\nScience",          subSkills = -1, row = 3 },
+                { label = "Chemistry",                  subSkills = -1 },
+                { label = "Electronics",                subSkills = -1 },
+                { label = "Physics",                    subSkills = -1 },
+            },
+            {--27
+                { label = "Social\nScience",            subSkills = -1, row = 3 },
+                { label = "Archeology",                 subSkills = -1 },
+                { label = "Economics",                  subSkills = -1 },
+                { label = "History",                    subSkills = -1 },
+                { label = "Lingustics",                 subSkills = -1 },
+                { label = "Philosophy",                 subSkills = -1 },
+                { label = "Psychology",                 subSkills = -1 },
+                { label = "Sophontology",               subSkills = -1 },
+            },
+            {--28
+                { label = "Space\nScience",             subSkills = -1, row = 3 },
+                { label = "Planetology",                subSkills = -1 },
+                { label = "Robotics",                   subSkills = -1 },
+                { label = "Xenology",                   subSkills = -1 },
+            },
+            {--29
+                { label = "Cancel",                     subSkills = -2, row = 4 },
+            }
+        }
+
+        local skillBS = {0.1,0.1,0.085}
+        local buttonF = {0,0,0,1}
+        local buttonFInvis = {0,0,0,0}
+        local skillS = 1500
+        local skillSInvis = 0
+        local font = skillS / 6
+
+        removeEditButtons()
+
+        memory1 = ""
+        memory2 = ""
+
+        for i in ipairs(skills) do
+
+            local rowPos = -0.498 + (0.332 * skills[i][1].row)
+
+            for j in ipairs(skills[i]) do
+                _G["skillClick"..i.."-"..j] = function(owner, player)
+                    if skills[i][j].subSkills == -1 then
+                        skillDialogue(skills[i], skills[i][j].subSkills, i, skills[i][j].label, player)
+                    elseif skills[i][j].subSkills == 1 or skills[i][j].subSkills == -2 then
+                        skillDialogue(skills[i], skills[i][j].subSkills, i)
+                    else
+                        skillDialogue(skills[i], skills[skills[i][j].subSkills], i, skills[i][j].label, player)
+                    end
+                end
+
+                local pos
+                if i == 29 then -- Cancel button
+                    pos = {0.8, 0.1, 0.83}
+                else
+                    if i == 1 then -- Categories
+                        upPos = -0.83
+                    else
+                        upPos = rowPos + math.floor((j - 1) / 5) * 0.332
+                    end
+                    pos = {-0.8 + ((j - 1) % 5) * 0.4, 0.1, upPos}
+                end
+
+                skiller.createButton({
+                    label=skills[i][j].label, click_function="skillClick"..i.."-"..j, function_owner=self,
+                    font_size=font, scale=skillBS, position=pos,
+
+                    height=(i == 1 or i == 29) and skillS or skillSInvis, width=(i == 1 or i == 29) and skillS or skillSInvis,
+
+                    color=(i == 1) and {0.5,0.5,1} or (i == 29) and {1,1,1} or (skills[i][j].subSkills == -1 and i >= 2 and i <= 6)
+                    and {1,0,0} or (i >= 2 and i <= 6) and {0.65,0,0} or (i >= 25 and i <= 28) and {0.8,0.8,0}
+                    or (skills[i][j].subSkills == -1) and {0.2,0.2,1} or {0,0,0.8},
+
+                    font_color=(i == 1 or i == 29) and buttonF or buttonFInvis,
+
+                    group=skills[i], subSkills=skills[skills[i][j].subSkills]
+                })
+                skillButtons[#skillButtons + 1] = {skills[i], skills[skills[i][j].subSkills]}
+                skills[i][j].index = #skillButtons - 1
+            end
+        end
+
+        --[[
+        One day add a search bar on top of the menu, that when the player starts typing in,
+        will replace the catagory buttons with buttons that show any skills and sub-skills
+        that match the search. Maybe update the results live? Then the player can click on
+        the search result button that they are looking for
+        ]]
+    end
+
+
+
+
+
+    function addUpChars(s)
+        local total = 0
+
+        for i in string.gmatch(s, ".") do
+            if i == "A" then total = total + 50
+            elseif i == "a" then total = total + 40
+            elseif i == "B" then total = total + 40
+            elseif i == "b" then total = total + 40
+            elseif i == "C" then total = total + 40
+            elseif i == "c" then total = total + 35
+            elseif i == "D" then total = total + 47
+            elseif i == "d" then total = total + 40
+            elseif i == "E" then total = total + 40
+            elseif i == "e" then total = total + 35
+            elseif i == "F" then total = total + 40
+            elseif i == "f" then total = total + 35
+            elseif i == "G" then total = total + 50
+            elseif i == "g" then total = total + 45
+            elseif i == "H" then total = total + 45
+            elseif i == "h" then total = total + 40
+            elseif i == "I" then total = total + 20
+            elseif i == "i" then total = total + 20
+            elseif i == "J" then total = total + 30
+            elseif i == "j" then total = total + 30
+            elseif i == "K" then total = total + 50
+            elseif i == "k" then total = total + 40
+            elseif i == "L" then total = total + 40
+            elseif i == "l" then total = total + 25
+            elseif i == "M" then total = total + 60
+            elseif i == "m" then total = total + 55
+            elseif i == "N" then total = total + 47
+            elseif i == "n" then total = total + 40
+            elseif i == "O" then total = total + 45
+            elseif i == "o" then total = total + 36
+            elseif i == "P" then total = total + 40
+            elseif i == "p" then total = total + 40
+            elseif i == "Q" then total = total + 50
+            elseif i == "q" then total = total + 40
+            elseif i == "R" then total = total + 47
+            elseif i == "r" then total = total + 32
+            elseif i == "S" then total = total + 40
+            elseif i == "s" then total = total + 30
+            elseif i == "T" then total = total + 45
+            elseif i == "t" then total = total + 40
+            elseif i == "U" then total = total + 45
+            elseif i == "u" then total = total + 40
+            elseif i == "V" then total = total + 47
+            elseif i == "v" then total = total + 35
+            elseif i == "W" then total = total + 70
+            elseif i == "w" then total = total + 55
+            elseif i == "X" then total = total + 47
+            elseif i == "x" then total = total + 40
+            elseif i == "Y" then total = total + 47
+            elseif i == "y" then total = total + 40
+            elseif i == "Z" then total = total + 40
+            elseif i == "z" then total = total + 30
+            elseif i == "." then total = total + 20
+            elseif i == "/" then total = total + 30
+            elseif i == " " then total = total + 20
+            elseif i == "-" then total = total + 30
+            end
+        end
+        return total
+    end
+
+
+
+
+
+    local ancestor
+
+    function startEditButtonsTimer()
+        Timer.create({
+            identifier = "TravellerCharSheetEditButtonsTimeout"..self.getGUID(),
+            function_name = "removeEditButtons",
+            delay = 20
+        })
+    end
+
+    function removeEditButtons()
+        Timer.destroy("TravellerCharSheetEditButtonsTimeout"..self.getGUID())
+        for k in ipairs(editButtons) do
+            self.editButton({
+                index = editButtons[k], width = hideSize,
+                height = hideSize, font_color = hideFont,
+            })
+        end
+        lastButtonPressed = -1
+    end
+
+
+
+    function spawnSkillButtons()
+        local row = math.floor(#skillsList / 4)
+        local rowAdd = #skillsList % 4
+        local rowMinus = rowAdd - 1
+
+        local rowOne = rowAdd - rowMinus + row
+
+        if rowMinus == 0 then
+            rowAdd = 0
+            rowMinus = 0
+        else
+            rowAdd = rowAdd - 1
+            rowMinus = rowAdd - 1
+        end
+        local rowTwo = rowAdd - rowMinus + row
+
+        if rowMinus == 0 then
+            rowAdd = 0
+            rowMinus = 0
+        else
+            rowAdd = rowAdd - 1
+            rowMinus = rowAdd - 1
+        end
+        local rowThree = rowAdd - rowMinus + row
+
+        if rowMinus == 0 then
+            rowAdd = 0
+            rowMinus = 0
+        else
+            rowAdd = rowAdd - 1
+            rowMinus = rowAdd - 1
+        end
+        local rowFour = rowAdd - rowMinus + row
+
+        if rowOne == rowFour then
+            rowOne = rowOne - 1
+            rowTwo = rowTwo - 1
+            rowThree = rowThree - 1
+            rowFour = rowFour - 1
+        end
+
+        local rows = -1
+        local coll = 0
+
+        for i in ipairs(skillsList) do --Add the skill button/counter combo
+            if rowOne > 0 then
+                rowOne = rowOne - 1
+                rows = rows + 1
+            elseif rowOne == 0 and rowTwo > 0 then
+                rowOne = rowOne - 1
+                rowTwo = rowTwo - 1
+                rows = 0
+                coll = 1
+            elseif rowOne < 0 and rowTwo > 0 then
+                rowTwo = rowTwo - 1
+                rows = rows + 1
+            elseif rowTwo == 0 and rowThree > 0 then
+                rowTwo = rowTwo - 1
+                rowThree = rowThree - 1
+                rows = 0
+                coll = 2
+            elseif rowTwo < 0 and rowThree > 0 then
+                rowThree = rowThree - 1
+                rows = rows + 1
+            elseif rowThree == 0 and rowFour > 0 then
+                rowThree = rowThree - 1
+                rowFour = rowFour - 1
+                rows = 0
+                coll = 3
+            elseif rowThree < 0 and rowFour > 0 then
+                rowFour = rowFour - 1
+                rows = rows + 1
+            elseif rowFour == 0 then
+                print("\n".."Something broke".."\n")
+            end
+
+            local upPos = -0.2465 + rows * 0.026
+            local sidePos = -0.667 + coll * 0.334
+
+            local color
+            local hColor
+            local labelAddon = ""
+
+            if string.find(skillsList[i].skill, "/", 1, true) == nil then
+                color = {0.85,0.85,0.85,1}
+                hColor = {0.5,0.5,0.5,1}
+            else
+                color = {1,1,1,1}
+                hColor = {0.5,0.5,0.5,1}
+                if rows == 0 then
+                    labelAddon = "Cont: "
+                end
+            end
+
+            local labelGSub = labelAddon..skillsList[i].skill
+
+            local len = addUpChars(labelGSub)
+
+            while math.abs(len) > 1250 do
+                labelGSub = string.gsub(labelAddon..skillsList[i].skill, "%a[%a ]*%s*/%s*", "... / ")
+                len = addUpChars(labelGSub)
+            end
+
+            local len = addUpChars(labelGSub) + 20
+            local sideLen = sidePos + (len / 10000)
+
+            _G["skillT"..i] = function(owner, player)
+                local posP = {sidePos + 0.32, 0.2, upPos}
+                local posM = {sidePos + 0.27, 0.2, upPos}
+                local posX = {sidePos - 0.014, 0.2, upPos}
+                local posA = {posP, posM, posX}
+
+                if lastButtonPressed ~= i then
+                    if lastButtonPressed ~= -1 then
+                        Timer.destroy("TravellerCharSheetEditButtonsTimeout"..self.getGUID())
+                        for k in ipairs(editButtons) do
+                            self.editButton({
+                                index          = editButtons[k],
+                                width          = showSize,
+                                height         = showSize,
+                                font_color     = showFont,
+                                position       = posA[k]
+                            })
+                        end
+                        lastButtonPressed = i
+                        startEditButtonsTimer()
+                    else
+                        for k in ipairs(editButtons) do
+                            self.editButton({
+                                index          = editButtons[k],
+                                width          = showSize,
+                                height         = showSize,
+                                font_color     = showFont,
+                                position       = posA[k]
+                            })
+                        end
+                        lastButtonPressed = i
+                        startEditButtonsTimer()
+                    end
+                else
+                    removeEditButtons()
+                end
+            end
+
+            if skillButtonsDex[i] ~= nil then
+                --Skill button label
+                self.editButton({
+                    index=skillButtonsDex[i][1],
+                    label=labelGSub, click_function="skillT"..i,
+                    position={sideLen, 0.2, upPos},
+                    height=1000, width=len * 10,
+                    color=color, hover_color=hColor,
+                    tooltip=skillsList[i].skill
+                })
+
+                local pos = {sidePos + 0.295, 0.2, upPos}
+
+                --Skill button counter
+                self.editButton({
+                    index          = skillButtonsDex[i][2],
+                    label          = skillsList[i].lvl,
+                    position       = pos,
+                    width          = 1000,
+                    height         = 1000
+                })
+            else --Add the skill button/counter combo
+                skillsList[i].index = spawnedButtonCount
+
+                --Skill button label
+                self.createButton({
+                    label=labelGSub, click_function="skillT"..i, function_owner=self,
+                    position={sideLen, 0.2, upPos},
+                    height=1000, width=len * 10,
+                    font_size=800, scale={0.01,0.01,0.01},
+                    color=color, hover_color=hColor,
+                    tooltip=skillsList[i].skill,
+                })
+
+                spawnedButtonCount = spawnedButtonCount + 1
+
+                --Skill button counter
+                do
+                    local label = skillsList[i].lvl
+                    local size = 1000
+                    local pos = {sidePos + 0.295, 0.2, upPos}
+                    local scale = {0.01,0.01,0.01}
+                    local fontColor = {0,0,0,1}
+                    local fontSize = 700
+
+                    self.createButton({
+                        label=label, click_function="click_none", function_owner=self,
+                        position=pos, height=size, width=size,
+                        font_size=fontSize, scale=scale,
+                        color={0.8,0.8,0.8}, font_color=fontColor
+                    })
+                    local d = spawnedButtonCount
+                    spawnedButtonCount = spawnedButtonCount + 1
+
+                    table.insert(skillButtonsDex, {skillsList[i].index, d})
+                end
+            end
+        end
+
+        if #skillButtonsDex >= 77 then
+            self.editInput({
+                index          = text.index,
+                position       = {-0.012,0.2,0.277},
+                height         = 0,
+                width          = 0
+            })
+        else
+            self.editInput({
+                index          = text.index,
+                position       = {-0.012,0.2,0.012 + math.floor((#skillsList + 3) / 4) * 0.013},
+                height         = 2463 - math.floor((#skillsList + 3) / 4) * 123,
+                value          = text.value
+            })
+        end
+    end
+
+
+
+
+    function skillDialogue(group, subSkills, iter, label, player)
+        local showSizeSkiller = 1500
+
+        if subSkills == -2 then --If it is the cancel button
+            skiller.destruct()
+        else
+            local i = iter
+            while i ~= 28 do
+                for j in ipairs(skills[i + 1]) do
+                    if i + 1 == group then
+                    else
+                        skiller.editButton({index=skills[i + 1][j].index, height=hideSize, width=hideSize, font_color=hideFont})
+                    end
+                end
+                i = i + 1
+            end
+        end
+
+        if subSkills == -1 then --If it is a end point button then run the skill list operations
+            for i in ipairs(skillButtonsDex) do --Remove all the old buttons
+                for j in pairs(skillButtonsDex[i]) do
+                    self.editButton({index=skillButtonsDex[i][j],label="",height=0,width=0,tooltip=nil,click_function="click_none"})
+                end
+            end
+
+            if iter < 7 then
+                ancestor = ""
+            elseif iter > 24 and iter < 29 and group[1].label == label then
+                ancestor = memory1.." / "
+                addToSkillList(memory1)
+            elseif group[1].label == label then
+                ancestor = ""
+            elseif memory2 ~= "" then
+                local mem2 = memory1.." / "..memory2
+                ancestor = mem2.." / "
+                addToSkillList(memory1)
+                addToSkillList(mem2)
+            elseif memory1 ~= "" then
+                ancestor = memory1.." / "
+                addToSkillList(memory1)
+            else
+                ancestor = ""
+            end
+
+            local skillString = string.gsub(ancestor..label, "%c", " ")
+
+            function allButtons()
+                for i in pairs(skillsList) do
+                    if skillString == skillsList[i].skill then
+                        return false
+                    end
+                end
+            end
+
+            if allButtons() ~= false then
+                if #skillsList >= 80 then --If there is no more room then send this to the player that clicked it, else add the skill to the list
+                    broadcastToColor("You've got the max amount of skills you can have.", player, {1,0,0})
+                --elseif
+                else
+                    table.insert(skillsList, {skill = skillString, lvl = 1})
+                    table.sort(skillsList, function(a, b)
+                            return a.skill < b.skill
+                        end
+                    )
+                end
+            end
+
+            skiller.destruct() --Remove the selecter panal
+
+            spawnSkillButtons()
+        elseif subSkills == -2 then
+            memory1 = ""
+            memory2 = ""
+        else
+            if iter == 1 then
+                memory1 = ""
+                memory2 = ""
+            elseif iter > 1 and iter < 7 then
+                memory1 = string.gsub(label, "%c", " ")
+            elseif iter == 24 then
+                memory2 = string.gsub(label, "%c", " ")
+            end
+            for i in ipairs(subSkills) do --Else normal operations
+                skiller.editButton({index=subSkills[i].index, height=showSizeSkiller, width=showSizeSkiller, font_color=showFont})
+            end
+        end
+
+        if #skillButtonsDex - 1 >= 80 then
+            self.editButton({index = add, font_color = {0.5,0.5,0.5}})
+        end
+    end
+
+    function addToSkillList(label)
+        local skillString = string.gsub(label, "%c", " ")
+
+        function allButtons()
+            for i in pairs(skillsList) do
+                if skillString == skillsList[i].skill then
+                    return false
+                end
+            end
+        end
+
+        if allButtons() ~= false then
+            if #skillsList >= 80 then --If there is no more room then send this to the player that clicked it, else add the skill to the list
+                broadcastToColor("You've got the max amount of skills you can have.", player, {1,0,0})
+            --elseif
+            else
+                table.insert(skillsList, {skill = skillString, lvl = 1})
+                table.sort(skillsList, function(a, b)
+                        return a.skill < b.skill
+                    end
+                )
+            end
+        end
+    end
+
+    function resetSkillButtons()
+        for i in ipairs(skillButtonsDex) do --Remove all the old buttons
+            for j in pairs(skillButtonsDex[i]) do
+                self.editButton({index=skillButtonsDex[i][j],label="",height=0,width=0,tooltip=nil,click_function="click_none"})
+            end
+        end
+
+        spawnSkillButtons()
+
+        if #skillButtonsDex - 1 >= 80 then
+            self.editButton({index = add, font_color = {0.5,0.5,0.5}})
+        end
+    end
+end
