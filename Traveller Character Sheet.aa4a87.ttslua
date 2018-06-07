@@ -884,6 +884,7 @@ function skillStartup()
 
     local memory1 = ""
     local memory2 = ""
+    local output = ""
 
     function addSkills(owner, player)
         if #skillButtonsDex >= 80 then
@@ -1263,6 +1264,8 @@ function skillStartup()
             elseif i == "/" then total = total + 30
             elseif i == " " then total = total + 20
             elseif i == "-" then total = total + 30
+            elseif i == "(" then total = total + 30
+            elseif i == ")" then total = total + 30
             end
         end
         return total
@@ -1295,7 +1298,13 @@ function skillStartup()
 
 
 
+    local cont = {}
+
     function spawnSkillButtons()
+        for i in ipairs(cont) do
+            self.editButton({index=cont[i],label="",height=0,width=0,tooltip=nil})
+        end
+
         local row = math.floor(#skillsList / 4)
         local rowAdd = #skillsList % 4
         local rowMinus = rowAdd - 1
@@ -1376,7 +1385,6 @@ function skillStartup()
 
             local color
             local hColor
-            local labelAddon = ""
 
             if string.find(skillsList[i].skill, "/", 1, true) == nil then
                 color = {0.85,0.85,0.85,1}
@@ -1385,16 +1393,44 @@ function skillStartup()
                 color = {1,1,1,1}
                 hColor = {0.5,0.5,0.5,1}
                 if rows == 0 then
-                    labelAddon = "Cont: "
+                    local label = skillsList[i].ancester.." (continued)"
+                    local len = addUpChars(label) + 20
+                    local sideLen = (sidePos) + (len / 10000)
+
+                    if cont[iter] ~= nil then
+                        self.editButton({
+                            index          = cont[iter],
+                            label          = label,
+                            position       = {sideLen, 0.2, -0.2725},
+                            width          = len * 10,
+                            height         = 1000,
+                            tooltip        = label
+                        })
+                    else
+                        self.createButton({
+                            click_function = "click_none",
+                            function_owner = self,
+                            label          = label,
+                            position       = {sideLen, 0.2, -0.2725},
+                            scale          = {0.01,0.01,0.01},
+                            width          = len * 10,
+                            height         = 1000,
+                            font_size      = 800,
+                            color          = {0.7,0.7,0.7,1},
+                            tooltip        = label
+                        })
+                        cont[#cont+1] = spawnedButtonCount
+                        spawnedButtonCount = spawnedButtonCount + 1
+                    end
                 end
             end
 
-            local labelGSub = labelAddon..skillsList[i].skill
+            local labelGSub = skillsList[i].skill
 
             local len = addUpChars(labelGSub)
 
             while math.abs(len) > 1250 do
-                labelGSub = string.gsub(labelAddon..skillsList[i].skill, "%a[%a ]*%s*/%s*", "... / ")
+                labelGSub = string.gsub(skillsList[i].skill, "%a[%a ]*%s*/%s*", "... / ")
                 len = addUpChars(labelGSub)
             end
 
@@ -1543,26 +1579,40 @@ function skillStartup()
                 end
             end
 
+            local output
+
             if iter < 7 then
                 ancestor = ""
+                output = ""
             elseif iter > 24 and iter < 29 and group[1].label == label then
                 ancestor = memory1.." / "
+                output = memory1
                 addToSkillList(memory1)
             elseif group[1].label == label then
                 ancestor = ""
+                output = ""
             elseif memory2 ~= "" then
                 local mem2 = memory1.." / "..memory2
                 ancestor = mem2.." / "
+                output = mem2
                 addToSkillList(memory1)
-                addToSkillList(mem2)
+                addToSkillList(mem2, memory1)
             elseif memory1 ~= "" then
                 ancestor = memory1.." / "
+                output = memory1
                 addToSkillList(memory1)
             else
                 ancestor = ""
+                output = ""
             end
 
             local skillString = string.gsub(ancestor..label, "%c", " ")
+
+            if output == nil then
+                memoryAncester = ""
+            else
+                memoryAncester = output
+            end
 
             function allButtons()
                 for i in pairs(skillsList) do
@@ -1577,7 +1627,7 @@ function skillStartup()
                     broadcastToColor("You've got the max amount of skills you can have.", player, {1,0,0})
                 --elseif
                 else
-                    table.insert(skillsList, {skill = skillString, lvl = 1})
+                    table.insert(skillsList, {skill = skillString, lvl = 1, ancester = memoryAncester})
                     table.sort(skillsList, function(a, b)
                             return a.skill < b.skill
                         end
@@ -1610,8 +1660,14 @@ function skillStartup()
         end
     end
 
-    function addToSkillList(label)
+    function addToSkillList(label, memory)
+        local memoryAncester
         local skillString = string.gsub(label, "%c", " ")
+        if memory == nil then
+            memoryAncester = ""
+        else
+            memoryAncester = memory
+        end
 
         function allButtons()
             for i in pairs(skillsList) do
@@ -1626,7 +1682,7 @@ function skillStartup()
                 broadcastToColor("You've got the max amount of skills you can have.", player, {1,0,0})
             --elseif
             else
-                table.insert(skillsList, {skill = skillString, lvl = 1})
+                table.insert(skillsList, {skill = skillString, lvl = 1, ancester = memoryAncester})
                 table.sort(skillsList, function(a, b)
                         return a.skill < b.skill
                     end
